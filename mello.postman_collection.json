@@ -1,0 +1,166 @@
+{
+	"info": {
+		"_postman_id": "56198794-ec5d-4bbc-9a09-5d70b3e9e506",
+		"name": "mello",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "all-news",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "rq1weqwxa))13300",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://mello.test/api/news",
+					"protocol": "https",
+					"host": [
+						"mello",
+						"test"
+					],
+					"path": [
+						"api",
+						"news"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search-news",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "rq1weqwxa))13300",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://mello.test/api/news/search?search[title]=Rodolfo&search[description]=mollitia&order[id]=desc",
+					"protocol": "https",
+					"host": [
+						"mello",
+						"test"
+					],
+					"path": [
+						"api",
+						"news",
+						"search"
+					],
+					"query": [
+						{
+							"key": "search[title]",
+							"value": "Rodolfo"
+						},
+						{
+							"key": "search[description]",
+							"value": "mollitia"
+						},
+						{
+							"key": "order[id]",
+							"value": "desc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "news-with-tags",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "rq1weqwxa))13300",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://mello.test/api/news/with-tags",
+					"protocol": "https",
+					"host": [
+						"mello",
+						"test"
+					],
+					"path": [
+						"api",
+						"news",
+						"with-tags"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "this-news",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "rq1weqwxa))13300",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://mello.test/api/news/4",
+					"protocol": "https",
+					"host": [
+						"mello",
+						"test"
+					],
+					"path": [
+						"api",
+						"news",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
